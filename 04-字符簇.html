@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>字符簇</title>
+</head>
+<body>
+<script>
+  var str1 = '我爱祖国';
+  var regx1 = /[\u4e00-\u9fa5]/;
+
+  var str2 = 'df5fg248k6bcxas748l54vcfges';
+  var regx2=/\w/;
+
+  var str3= '我送hi拉拉';
+  var regx3 = /拉/; // 此中文匹配只在js中有效，其他语言不行
+  console.log(str3.match(regx3));
+
+</script>
+</body>
+</html>

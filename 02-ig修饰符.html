@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  var str = 'sdjfdksjfisdfdsdadais';
+  var regex = /is/;
+  var regex_i = /is/i; // 使用i修饰符忽略大小写
+  // 对象方式
+  var regex_is = new RegExp('is','i');
+  // console.log('无i',regex.test(str));
+  console.log('i修饰符',regex_i.test(str));
+</script>
+</html>

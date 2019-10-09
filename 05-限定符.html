@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>限定符</title>
+</head>
+<body>
+<script>
+  var str1 = '我的QQ是308399688，另外一个QQ是429771899，我的电话是18685488888没我的11身份证是542412489654214784';
+  // 查出10位数
+  var regx1 = /[1-9]\d{4,9}/g;
+  var regx2 = /[1-9]\d*/g;
+  console.log(str1.match(regx2));
+</script>
+</body>
+</html>

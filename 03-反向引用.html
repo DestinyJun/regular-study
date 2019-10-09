@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>反向引用</title>
+</head>
+<body>
+
+</body>
+<script>
+  var str1 = 'sdfsd5454333356456sf45fs6456sd78454sfdfsf5555ssegd';
+  // 子表达表达式
+  var reg1 = /(\d)\1\1\1/g; // 查找连续相同的数字
+  console.log(str1.match(reg1));
+</script>
+</html>
