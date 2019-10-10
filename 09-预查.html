@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>预查</title>
+</head>
+<body>
+<script>
+  // 匹配字符串中与ing结尾的单词的词根部分
+  var str1 = 'hello,when i am working,do not coming';
+  var regx1 = /\b\w+(?=ing\b)/g;
+  console.log(str1.match(regx1));
+
+  // 需求：把不是ing结尾的单词找出来，也叫负向预查（记得不是反向），负预测，前瞻，相信否定
+  var regx2 = /\b\w+(?!ing)\w{3}\b/g;
+  console.log(str1.match(regx2));
+</script>
+</body>
+</html>

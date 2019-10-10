@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>或者的用法</title>
+</head>
+<body>
+<script>
+  // 匹配出苹果公司的所有产品
+  var str1 = 'ipad,iphone,iwatch,imac,igdv,iccdgs,idf212iasdfa';
+  var regx = /\bi(pad|phone|watch|mac)\b/g;
+  console.log(str1.match(regx));
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>匹配模式</title>
+</head>
+<body>
+<script>
+  var str = '我的QQ是308399688，另外一个QQ是429771899，我的电话是18685488888没我的11身份证是542412489654214784';
+  var reg1 = /[1-9]\d{4,9}/g; // 贪婪匹配模式：能匹配10位，绝不匹配5位，尽最大的查
+  var reg2 = /[1-9]\d{4,9}?/g; // 惰性匹配模式：能匹配5位，绝不匹配10位，尽最小的查
+  console.log(str.match(reg2));
+</script>
+</body>
+</html>
